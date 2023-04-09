@@ -24,7 +24,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      uses: GabrielCodeProject/portfolio-v2
+      uses: GabrielCodeProject/github-pages-deploy-action@v3
       with:
         branch: gh-pages
         folder: build
