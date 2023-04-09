@@ -8,12 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2.7.0
 
     - name: Use API token
-      run: echo ${{ secrets.MY_SECRET }}
+      run: echo ${{ secrets.API_TOKEN }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
