@@ -11,9 +11,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2.7.0
+      with:
+          fetch-depth: 0
+          token: ${{ secrets.ACCES_TOKEN }}
 
     - name: Use API token
-      run: echo ${{ secrets.API_TOKEN }}
+      run: echo ${{ secrets.ACCES_TOKEN }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
