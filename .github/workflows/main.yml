@@ -8,10 +8,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps: 
     - name: Use API token
       run: echo ${{ secrets.API_TOKEN }}
-
+      
     steps:
     - uses: actions/checkout@v2.7.0
 
